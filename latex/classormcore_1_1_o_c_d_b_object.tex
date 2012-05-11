@@ -1,0 +1,445 @@
+\hypertarget{classormcore_1_1_o_c_d_b_object}{
+\section{ormcore\-:\-:\-O\-C\-D\-B\-Object$<$ \-T $>$ \-Class \-Template \-Reference}
+\label{classormcore_1_1_o_c_d_b_object}\index{ormcore\-::\-O\-C\-D\-B\-Object$<$ T $>$@{ormcore\-::\-O\-C\-D\-B\-Object$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$ocdbobject.\-h$>$}
+
+\-Inheritance diagram for ormcore\-:\-:\-O\-C\-D\-B\-Object$<$ \-T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classormcore_1_1_o_c_d_b_object}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries \-O\-C\-\_\-\-\_\-\-P\-A\-R\-S\-E\-R\-\_\-\-C\-O\-L\-U\-M\-N} =  0, 
+{\bfseries \-O\-C\-\_\-\-P\-A\-R\-S\-E\-R\-\_\-\-T\-Y\-P\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classormcore_1_1_o_c_d_b_object_a46280068ed1abcb08c5f614e787e4dba}{\-O\-C\-D\-B\-Object} ()
+\item 
+virtual \hyperlink{classormcore_1_1_o_c_d_b_object_a663934fbb05460513439521ef8eadb63}{$\sim$\-O\-C\-D\-B\-Object} ()
+\item 
+bool \hyperlink{classormcore_1_1_o_c_d_b_object_a7e2e9c0820bc66189a1bcf6efca053d2}{get} (qint64 id)
+\item 
+void \hyperlink{classormcore_1_1_o_c_d_b_object_a3c51b31ed3af8f9c053f18a8a273629c}{\-Load\-Fields} ()
+\item 
+quint64 \hyperlink{classormcore_1_1_o_c_d_b_object_a874b6393a9eec12bcca0223498222c19}{id} ()
+\item 
+void \hyperlink{classormcore_1_1_o_c_d_b_object_abf952a522671d2b77c7098e19854843d}{set\-Id} (quint64 id)
+\item 
+void \hyperlink{classormcore_1_1_o_c_d_b_object_a8ce6b4690c5fb6f0fba1a8f1d1e2b3fb}{set\-Value} (\-Q\-String field, \-Q\-Variant value)
+\item 
+\-Q\-Variant \& \hyperlink{classormcore_1_1_o_c_d_b_object_a989b2d6257bf82aaa38f8d15d3d83c2c}{operator\mbox{[}$\,$\mbox{]}} (\-Q\-String key)
+\item 
+void \hyperlink{classormcore_1_1_o_c_d_b_object_afb6673d0d57d70513847db564915ef78}{save\-If\-Not\-Exists} (\-Q\-String\-List fields=\-Q\-String\-List())
+\item 
+void \hyperlink{classormcore_1_1_o_c_d_b_object_ac90983398799a3181e145f8057a608ab}{save\-If\-Not\-Exists\-Except} (\-Q\-String\-List exceptions=\-Q\-String\-List())
+\item 
+void \hyperlink{classormcore_1_1_o_c_d_b_object_adf3f8d09d2cda13348e9834144916e45}{save} ()
+\item 
+bool \hyperlink{classormcore_1_1_o_c_d_b_object_acb0dd02e72d5714014f7b9856f38db18}{get\-Same\-Values} (\-Q\-String\-List fields=\-Q\-String\-List(), \-Q\-String order\-By=\-Q\-String())
+\item 
+bool \hyperlink{classormcore_1_1_o_c_d_b_object_a1531bd979b94e095972579a9944734d9}{get\-Same\-Values\-Except} (\-Q\-String\-List fields\-Except=\-Q\-String\-List(), \-Q\-String order\-By=\char`\"{}\char`\"{})
+\item 
+bool \hyperlink{classormcore_1_1_o_c_d_b_object_a4a508cd7582d12587c81f938eacc7462}{exists\-Same\-Values} (\-Q\-String\-List fields=\-Q\-String\-List())
+\item 
+bool \hyperlink{classormcore_1_1_o_c_d_b_object_a5a0fbb8f89ed201d2625edd43647207f}{exists\-Same\-Values\-Except} (\-Q\-String\-List fields\-Except=\-Q\-String\-List())
+\item 
+bool \hyperlink{classormcore_1_1_o_c_d_b_object_ae3f5eb296ca8dfb03ee72fdf1cf5c199}{exists} (\-Q\-String where\-Clause=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classormcore_1_1_o_c_d_b_object_acedb1136e415338d607b7edef6037409}{
+static \-Q\-Hash$<$ \-Q\-String, \-Q\-String $>$ {\bfseries parse\-Fields} (\-Q\-String schema)}
+\label{classormcore_1_1_o_c_d_b_object_acedb1136e415338d607b7edef6037409}
+
+\item 
+static void \hyperlink{classormcore_1_1_o_c_d_b_object_a128132815ade97882e2300743779e46a}{add\-Columns} (\-Q\-Hash$<$ \-Q\-String, \-Q\-String $>$ old\-Fields, \-Q\-Hash$<$ \-Q\-String, \-Q\-String $>$ new\-Fields)
+\item 
+static void \hyperlink{classormcore_1_1_o_c_d_b_object_a36815ad0bdadcabfdf3ed84e2411e9c1}{recreate\-Table} (\-Q\-Hash$<$ \-Q\-String, \-Q\-String $>$ old\-Fields, \-Q\-Hash$<$ \-Q\-String, \-Q\-String $>$ new\-Fields)
+\item 
+static void \hyperlink{classormcore_1_1_o_c_d_b_object_a18c394209bf0e80082d884842ea9630a}{create\-Table} ()
+\item 
+static \-Q\-Hash$<$ \-Q\-String, \-Q\-String $>$ \hyperlink{classormcore_1_1_o_c_d_b_object_ad32aef4a69a116a0fa7ebf7d704d3506}{get\-Table\-Columns} ()
+\item 
+static void \hyperlink{classormcore_1_1_o_c_d_b_object_a2f72c86621c10110a70ffed11033c38c}{sync\-Database} ()
+\item 
+static \-Q\-List$<$ \hyperlink{classormcore_1_1_o_c_d_b_object}{\-O\-C\-D\-B\-Object}$<$ \-T $>$ $>$ \hyperlink{classormcore_1_1_o_c_d_b_object_a0617a472caa17e9ca3da70c7386b885c}{objects} (\-Q\-String where\-Clause=\char`\"{}\char`\"{}, \-Q\-String order\-By=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\subsubsection*{template$<$class \-T$>$class ormcore\-::\-O\-C\-D\-B\-Object$<$ T $>$}
+
+\-Template base dos objetos do banco de dados. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a46280068ed1abcb08c5f614e787e4dba}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!\-O\-C\-D\-B\-Object@{\-O\-C\-D\-B\-Object}}
+\index{\-O\-C\-D\-B\-Object@{\-O\-C\-D\-B\-Object}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{\-O\-C\-D\-B\-Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::{\bf \-O\-C\-D\-B\-Object} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a46280068ed1abcb08c5f614e787e4dba}
+\-Construtor da classe \-Testa se o objeto passado para o template é o correto (precisa herdar de \hyperlink{classormcore_1_1_o_c_model}{\-O\-C\-Model}). \begin{DoxySeeAlso}{\-See also}
+\hyperlink{classormcore_1_1_o_c_model}{\-O\-C\-Model} 
+\end{DoxySeeAlso}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a663934fbb05460513439521ef8eadb63}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!$\sim$\-O\-C\-D\-B\-Object@{$\sim$\-O\-C\-D\-B\-Object}}
+\index{$\sim$\-O\-C\-D\-B\-Object@{$\sim$\-O\-C\-D\-B\-Object}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{$\sim$\-O\-C\-D\-B\-Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ virtual {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::$\sim${\bf \-O\-C\-D\-B\-Object} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a663934fbb05460513439521ef8eadb63}
+\-Destrutor da classe 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a128132815ade97882e2300743779e46a}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!add\-Columns@{add\-Columns}}
+\index{add\-Columns@{add\-Columns}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{add\-Columns}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ static void {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::add\-Columns (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Hash$<$ \-Q\-String, \-Q\-String $>$}]{old\-Fields, }
+\item[{\-Q\-Hash$<$ \-Q\-String, \-Q\-String $>$}]{new\-Fields}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a128132815ade97882e2300743779e46a}
+\-Adiciona colunas à tabela 
+\begin{DoxyParams}{\-Parameters}
+{\em old\-Fields} & \-Campos da tabela antiga \\
+\hline
+{\em new\-Fields} & \-Campos da tabela nova \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \hyperlink{classormcore_1_1_o_c_s_q_l_exception}{\-O\-C\-S\-Q\-L\-Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a18c394209bf0e80082d884842ea9630a}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!create\-Table@{create\-Table}}
+\index{create\-Table@{create\-Table}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{create\-Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ static void {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::create\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a18c394209bf0e80082d884842ea9630a}
+\-Criar tabela no banco de dados 
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \hyperlink{classormcore_1_1_o_c_s_q_l_exception}{\-O\-C\-S\-Q\-L\-Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classormcore_1_1_o_c_d_b_object_ae3f5eb296ca8dfb03ee72fdf1cf5c199}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!exists@{exists}}
+\index{exists@{exists}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ bool {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::exists (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{where\-Clause = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_ae3f5eb296ca8dfb03ee72fdf1cf5c199}
+\-Verifica se existe o valor no banco de dados com a where\-Clause informada como parâmetro. 
+\begin{DoxyParams}{\-Parameters}
+{\em where\-Clause} & \-Clausula where no banco de dados sem o \char`\"{}\-W\-H\-E\-R\-E\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Verdadeiro caso exista, ou falso em caso negativo 
+\end{DoxyReturn}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a4a508cd7582d12587c81f938eacc7462}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!exists\-Same\-Values@{exists\-Same\-Values}}
+\index{exists\-Same\-Values@{exists\-Same\-Values}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{exists\-Same\-Values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ bool {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::exists\-Same\-Values (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String\-List}]{fields = {\ttfamily \-Q\-String\-List()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a4a508cd7582d12587c81f938eacc7462}
+\-Verifica se existe já um registro no banco de dados com os mesmos valores (\-Exceto id, que pode ser diferente) e exceto campos passados como parâmetro 
+\begin{DoxyParams}{\-Parameters}
+{\em fields\-Except} & \-Campos para ignorar na comparação \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Retorna verdadeiro caso já exista o registro, ou falso em caso negativo 
+\end{DoxyReturn}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a5a0fbb8f89ed201d2625edd43647207f}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!exists\-Same\-Values\-Except@{exists\-Same\-Values\-Except}}
+\index{exists\-Same\-Values\-Except@{exists\-Same\-Values\-Except}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{exists\-Same\-Values\-Except}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ bool {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::exists\-Same\-Values\-Except (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String\-List}]{fields\-Except = {\ttfamily \-Q\-String\-List()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a5a0fbb8f89ed201d2625edd43647207f}
+\-Verifica se existe já um registro no banco de dados com os mesmos valores (\-Exceto id, que pode ser diferente) e exceto campos passados como parâmetro 
+\begin{DoxyParams}{\-Parameters}
+{\em fields\-Except} & \-Campos para ignorar na comparação \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Retorna verdadeiro caso já exista o registro, ou falso em caso negativo 
+\end{DoxyReturn}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a7e2e9c0820bc66189a1bcf6efca053d2}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!get@{get}}
+\index{get@{get}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ bool {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::get (
+\begin{DoxyParamCaption}
+\item[{qint64}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a7e2e9c0820bc66189a1bcf6efca053d2}
+\-Carrega o objeto do banco do dados com base no id passado como parâmetro. 
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \hyperlink{classormcore_1_1_o_c_s_q_l_exception}{\-O\-C\-S\-Q\-L\-Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{\-Parameters}
+{\em id} & \-Identificador do objeto no banco de dados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Valor booleano indicando se o objeto foi carregado ou não. 
+\end{DoxyReturn}
+\hypertarget{classormcore_1_1_o_c_d_b_object_acb0dd02e72d5714014f7b9856f38db18}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!get\-Same\-Values@{get\-Same\-Values}}
+\index{get\-Same\-Values@{get\-Same\-Values}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{get\-Same\-Values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ bool {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::get\-Same\-Values (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String\-List}]{fields = {\ttfamily \-Q\-String\-List()}, }
+\item[{\-Q\-String}]{order\-By = {\ttfamily \-Q\-String()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_acb0dd02e72d5714014f7b9856f38db18}
+\-Verifica se existe já um registro no banco de dados com os mesmos valores do objeto, com os campos passados como parâmetro e carrega o primeiro valor encontrado 
+\begin{DoxyParams}{\-Parameters}
+{\em fields} & \-Campos para comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Retorna verdadeiro caso já exista o registro e tenha sido carregado, ou falso em caso negativo 
+\end{DoxyReturn}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a1531bd979b94e095972579a9944734d9}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!get\-Same\-Values\-Except@{get\-Same\-Values\-Except}}
+\index{get\-Same\-Values\-Except@{get\-Same\-Values\-Except}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{get\-Same\-Values\-Except}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ bool {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::get\-Same\-Values\-Except (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String\-List}]{fields\-Except = {\ttfamily \-Q\-String\-List()}, }
+\item[{\-Q\-String}]{order\-By = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a1531bd979b94e095972579a9944734d9}
+\-Verifica se existe já um registro no banco de dados com os mesmos valores (\-Exceto id, que pode ser diferente) e exceto campos passados como parâmetro e carrega o primeiro valor encontrado 
+\begin{DoxyParams}{\-Parameters}
+{\em fields\-Except} & \-Campos para ignorar na comparação \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Retorna verdadeiro caso já exista o registro e tenha sido carregado, ou falso em caso negativo 
+\end{DoxyReturn}
+\hypertarget{classormcore_1_1_o_c_d_b_object_ad32aef4a69a116a0fa7ebf7d704d3506}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!get\-Table\-Columns@{get\-Table\-Columns}}
+\index{get\-Table\-Columns@{get\-Table\-Columns}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{get\-Table\-Columns}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ static \-Q\-Hash$<$\-Q\-String, \-Q\-String$>$ {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::get\-Table\-Columns (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_ad32aef4a69a116a0fa7ebf7d704d3506}
+\-Retornar nomes das colunas do banco de dados \begin{DoxyReturn}{\-Returns}
+nomes das colunas em uma \-Q\-Hash 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \hyperlink{classormcore_1_1_o_c_s_q_l_exception}{\-O\-C\-S\-Q\-L\-Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a874b6393a9eec12bcca0223498222c19}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!id@{id}}
+\index{id@{id}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ quint64 {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a874b6393a9eec12bcca0223498222c19}
+\-Retorna o id do objeto \begin{DoxyReturn}{\-Returns}
+id do objeto 
+\end{DoxyReturn}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a3c51b31ed3af8f9c053f18a8a273629c}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!\-Load\-Fields@{\-Load\-Fields}}
+\index{\-Load\-Fields@{\-Load\-Fields}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{\-Load\-Fields}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ void {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::\-Load\-Fields (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a3c51b31ed3af8f9c053f18a8a273629c}
+\-Carrega campos baseado no schema \hypertarget{classormcore_1_1_o_c_d_b_object_a0617a472caa17e9ca3da70c7386b885c}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!objects@{objects}}
+\index{objects@{objects}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ static \-Q\-List$<$ {\bf \-O\-C\-D\-B\-Object}$<$\-T$>$ $>$ {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::objects (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{where\-Clause = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{\-Q\-String}]{order\-By = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a0617a472caa17e9ca3da70c7386b885c}
+\-Filtra dados da base de dados com base nos paramêtros 
+\begin{DoxyParams}{\-Parameters}
+{\em where\-Clause} & \-Clausula where no banco de dados sem o \char`\"{}\-W\-H\-E\-R\-E\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Lista de objetos retornados do banco de dados 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \hyperlink{classormcore_1_1_o_c_s_q_l_exception}{\-O\-C\-S\-Q\-L\-Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a989b2d6257bf82aaa38f8d15d3d83c2c}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ \-Q\-Variant\& {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a989b2d6257bf82aaa38f8d15d3d83c2c}
+\-Sobrecarga do operador \mbox{[}\mbox{]} para atribuir ou recuperar o valor de um campo do objeto \-Mantendo uma equivalencia com o nome do campo na base de dados. 
+\begin{DoxyParams}{\-Parameters}
+{\em key} & \-Nome do campo na base de dados \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-O valor armazenado pelo campo 
+\end{DoxyReturn}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a36815ad0bdadcabfdf3ed84e2411e9c1}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!recreate\-Table@{recreate\-Table}}
+\index{recreate\-Table@{recreate\-Table}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{recreate\-Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ static void {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::recreate\-Table (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Hash$<$ \-Q\-String, \-Q\-String $>$}]{old\-Fields, }
+\item[{\-Q\-Hash$<$ \-Q\-String, \-Q\-String $>$}]{new\-Fields}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a36815ad0bdadcabfdf3ed84e2411e9c1}
+\-Recria tabela para remover campos 
+\begin{DoxyParams}{\-Parameters}
+{\em old\-Fields} & \-Campos da tabela antiga \\
+\hline
+{\em new\-Fields} & \-Campos da tabela nova \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \hyperlink{classormcore_1_1_o_c_s_q_l_exception}{\-O\-C\-S\-Q\-L\-Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classormcore_1_1_o_c_d_b_object_adf3f8d09d2cda13348e9834144916e45}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!save@{save}}
+\index{save@{save}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ void {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_adf3f8d09d2cda13348e9834144916e45}
+\-Salva as alterações na base de dados, caso o registro ainda não exista então é feita uma inserção dos dados na base. 
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \hyperlink{classormcore_1_1_o_c_s_q_l_exception}{\-O\-C\-S\-Q\-L\-Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classormcore_1_1_o_c_d_b_object_afb6673d0d57d70513847db564915ef78}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!save\-If\-Not\-Exists@{save\-If\-Not\-Exists}}
+\index{save\-If\-Not\-Exists@{save\-If\-Not\-Exists}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{save\-If\-Not\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ void {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::save\-If\-Not\-Exists (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String\-List}]{fields = {\ttfamily \-Q\-String\-List()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_afb6673d0d57d70513847db564915ef78}
+\-Salva registro apenas se já não existe na base de dados. 
+\begin{DoxyParams}{\-Parameters}
+{\em fields} & \-Campos para comparar quando verificar se já existe \\
+\hline
+\end{DoxyParams}
+\hypertarget{classormcore_1_1_o_c_d_b_object_ac90983398799a3181e145f8057a608ab}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!save\-If\-Not\-Exists\-Except@{save\-If\-Not\-Exists\-Except}}
+\index{save\-If\-Not\-Exists\-Except@{save\-If\-Not\-Exists\-Except}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{save\-If\-Not\-Exists\-Except}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ void {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::save\-If\-Not\-Exists\-Except (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String\-List}]{exceptions = {\ttfamily \-Q\-String\-List()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_ac90983398799a3181e145f8057a608ab}
+\-Salva registro apenas se já não existe na base de dados. 
+\begin{DoxyParams}{\-Parameters}
+{\em exeptions} & \-Campos para não comparar quando verificar se já existe \\
+\hline
+\end{DoxyParams}
+\hypertarget{classormcore_1_1_o_c_d_b_object_abf952a522671d2b77c7098e19854843d}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!set\-Id@{set\-Id}}
+\index{set\-Id@{set\-Id}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{set\-Id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ void {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::set\-Id (
+\begin{DoxyParamCaption}
+\item[{quint64}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_abf952a522671d2b77c7098e19854843d}
+\-Atribui o valor do id do objeto 
+\begin{DoxyParams}{\-Parameters}
+{\em id} & do objeto \\
+\hline
+\end{DoxyParams}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a8ce6b4690c5fb6f0fba1a8f1d1e2b3fb}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ void {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{field, }
+\item[{\-Q\-Variant}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a8ce6b4690c5fb6f0fba1a8f1d1e2b3fb}
+\-Atribui o valor value para o campo field do objeto 
+\begin{DoxyParams}{\-Parameters}
+{\em field} & \-Campo do objeto ao qual será atribuído o novo valor \\
+\hline
+{\em value} & \-Novo valor a ser assinalado para o campo field \\
+\hline
+\end{DoxyParams}
+\hypertarget{classormcore_1_1_o_c_d_b_object_a2f72c86621c10110a70ffed11033c38c}{
+\index{ormcore\-::\-O\-C\-D\-B\-Object@{ormcore\-::\-O\-C\-D\-B\-Object}!sync\-Database@{sync\-Database}}
+\index{sync\-Database@{sync\-Database}!ormcore::OCDBObject@{ormcore\-::\-O\-C\-D\-B\-Object}}
+\subsubsection[{sync\-Database}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ static void {\bf ormcore\-::\-O\-C\-D\-B\-Object}$<$ \-T $>$\-::sync\-Database (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_object_a2f72c86621c10110a70ffed11033c38c}
+\-Sincroniza a base de dados, ou seja, cria a tabela equivalente ao modelo, caso ela não exista. 
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \hyperlink{classormcore_1_1_o_c_s_q_l_exception}{\-O\-C\-S\-Q\-L\-Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-O\-R\-M\-C++/include/ocdbobject.\-h\end{DoxyCompactItemize}

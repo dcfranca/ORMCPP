@@ -1,0 +1,130 @@
+\hypertarget{classormcore_1_1_o_c_logger}{
+\section{ormcore\-:\-:\-O\-C\-Logger \-Class \-Reference}
+\label{classormcore_1_1_o_c_logger}\index{ormcore\-::\-O\-C\-Logger@{ormcore\-::\-O\-C\-Logger}}
+}
+
+
+{\ttfamily \#include $<$oclogger.\-h$>$}
+
+\-Inheritance diagram for ormcore\-:\-:\-O\-C\-Logger\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classormcore_1_1_o_c_logger}
+\end{center}
+\end{figure}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classormcore_1_1_o_c_logger_a3459e0daf8528bc1fa6ff2fee8f7ed7b}{init} (const \-Q\-String file\-Name)
+\item 
+static bool \hyperlink{classormcore_1_1_o_c_logger_a80761cdd34c1c2129781f0e10c49cc13}{is\-Log\-Active} ()
+\item 
+static void \hyperlink{classormcore_1_1_o_c_logger_a6b4ff14c85dfb0d9a5cfdb5de3e4c810}{set\-Log\-Level} (int log\-Level)
+\item 
+static void \hyperlink{classormcore_1_1_o_c_logger_a8ad195d1f7324577ab4d0da4c13bb311}{activate\-Debug} (bool activate=true)
+\item 
+static void \hyperlink{classormcore_1_1_o_c_logger_a0af956315f4126008eb02e38cca14ba7}{end} ()
+\item 
+static void \hyperlink{classormcore_1_1_o_c_logger_aaa72ada5c6981bc62367d0654f422607}{debug} (\-O\-C\-\_\-\-L\-O\-G\-\_\-\-T\-Y\-P\-E log\-Type, \-Q\-String file, qint32 line, \-Q\-String method, \-Q\-String message)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe que controla o log de mensagens em arquivo ou outros meios 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classormcore_1_1_o_c_logger_a8ad195d1f7324577ab4d0da4c13bb311}{
+\index{ormcore\-::\-O\-C\-Logger@{ormcore\-::\-O\-C\-Logger}!activate\-Debug@{activate\-Debug}}
+\index{activate\-Debug@{activate\-Debug}!ormcore::OCLogger@{ormcore\-::\-O\-C\-Logger}}
+\subsubsection[{activate\-Debug}]{\setlength{\rightskip}{0pt plus 5cm}static void ormcore\-::\-O\-C\-Logger\-::activate\-Debug (
+\begin{DoxyParamCaption}
+\item[{bool}]{activate = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classormcore_1_1_o_c_logger_a8ad195d1f7324577ab4d0da4c13bb311}
+\-Ativa ou desativa geração de log 
+\begin{DoxyParams}{\-Parameters}
+{\em is\-Log\-Active} & \-Indica se o log será ativado ou não (true ou false) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classormcore_1_1_o_c_logger_aaa72ada5c6981bc62367d0654f422607}{
+\index{ormcore\-::\-O\-C\-Logger@{ormcore\-::\-O\-C\-Logger}!debug@{debug}}
+\index{debug@{debug}!ormcore::OCLogger@{ormcore\-::\-O\-C\-Logger}}
+\subsubsection[{debug}]{\setlength{\rightskip}{0pt plus 5cm}void \-O\-C\-Logger\-::debug (
+\begin{DoxyParamCaption}
+\item[{\-O\-C\-\_\-\-L\-O\-G\-\_\-\-T\-Y\-P\-E}]{log\-Type, }
+\item[{\-Q\-String}]{file, }
+\item[{qint32}]{line, }
+\item[{\-Q\-String}]{method, }
+\item[{\-Q\-String}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classormcore_1_1_o_c_logger_aaa72ada5c6981bc62367d0654f422607}
+\-Registra informações de debug 
+\begin{DoxyParams}{\-Parameters}
+{\em log\-Type} & \-Tipo da mensagem registrada, podendo ser\-: \-O\-C\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O \-Mensagem apenas informativa. \-O\-C\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-N \-Mensagem de alerta, porém não é erro. \-O\-C\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R \-Mensagem de erro, porém não é erro fatal. \-O\-C\-\_\-\-L\-O\-G\-\_\-\-F\-A\-T\-A\-L \-Erro fatal, o programa pode fechar ou apresentar instabilidade. \\
+\hline
+{\em file} & \-Nome do arquivo fonte que está sendo executado. \\
+\hline
+{\em line} & \-Linha do arquivo fonte que está sendo executada. \\
+\hline
+{\em method} & \-Método do programa que está sendo executado. \\
+\hline
+{\em message} & \-Mensagem a ser registrada no log. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classormcore_1_1_o_c_logger_a0af956315f4126008eb02e38cca14ba7}{
+\index{ormcore\-::\-O\-C\-Logger@{ormcore\-::\-O\-C\-Logger}!end@{end}}
+\index{end@{end}!ormcore::OCLogger@{ormcore\-::\-O\-C\-Logger}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void \-O\-C\-Logger\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classormcore_1_1_o_c_logger_a0af956315f4126008eb02e38cca14ba7}
+\-Encerra gravação do log \hypertarget{classormcore_1_1_o_c_logger_a3459e0daf8528bc1fa6ff2fee8f7ed7b}{
+\index{ormcore\-::\-O\-C\-Logger@{ormcore\-::\-O\-C\-Logger}!init@{init}}
+\index{init@{init}!ormcore::OCLogger@{ormcore\-::\-O\-C\-Logger}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void \-O\-C\-Logger\-::init (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String}]{file\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classormcore_1_1_o_c_logger_a3459e0daf8528bc1fa6ff2fee8f7ed7b}
+\-Inicializa registro do log 
+\begin{DoxyParams}{\-Parameters}
+{\em file\-Name} & \-Nome do arquivo para onde serão registradas as mensagens \\
+\hline
+\end{DoxyParams}
+\hypertarget{classormcore_1_1_o_c_logger_a80761cdd34c1c2129781f0e10c49cc13}{
+\index{ormcore\-::\-O\-C\-Logger@{ormcore\-::\-O\-C\-Logger}!is\-Log\-Active@{is\-Log\-Active}}
+\index{is\-Log\-Active@{is\-Log\-Active}!ormcore::OCLogger@{ormcore\-::\-O\-C\-Logger}}
+\subsubsection[{is\-Log\-Active}]{\setlength{\rightskip}{0pt plus 5cm}static bool ormcore\-::\-O\-C\-Logger\-::is\-Log\-Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classormcore_1_1_o_c_logger_a80761cdd34c1c2129781f0e10c49cc13}
+\begin{DoxyReturn}{\-Returns}
+\-Se debug está ativo ou não 
+\end{DoxyReturn}
+\hypertarget{classormcore_1_1_o_c_logger_a6b4ff14c85dfb0d9a5cfdb5de3e4c810}{
+\index{ormcore\-::\-O\-C\-Logger@{ormcore\-::\-O\-C\-Logger}!set\-Log\-Level@{set\-Log\-Level}}
+\index{set\-Log\-Level@{set\-Log\-Level}!ormcore::OCLogger@{ormcore\-::\-O\-C\-Logger}}
+\subsubsection[{set\-Log\-Level}]{\setlength{\rightskip}{0pt plus 5cm}static void ormcore\-::\-O\-C\-Logger\-::set\-Log\-Level (
+\begin{DoxyParamCaption}
+\item[{int}]{log\-Level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classormcore_1_1_o_c_logger_a6b4ff14c85dfb0d9a5cfdb5de3e4c810}
+\-Atribui o nível mínimo de log (-\/1 para todos os níveis) 
+\begin{DoxyParams}{\-Parameters}
+{\em log\-Level} & \-O nível de log a ser mostrado \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-O\-R\-M\-C++/include/oclogger.\-h\item 
+\-O\-R\-M\-C++/src/oclogger.\-cpp\end{DoxyCompactItemize}

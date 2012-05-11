@@ -1,0 +1,87 @@
+\hypertarget{classormcore_1_1_o_c_d_b_manager}{
+\section{ormcore\-:\-:\-O\-C\-D\-B\-Manager \-Class \-Reference}
+\label{classormcore_1_1_o_c_d_b_manager}\index{ormcore\-::\-O\-C\-D\-B\-Manager@{ormcore\-::\-O\-C\-D\-B\-Manager}}
+}
+\-Inheritance diagram for ormcore\-:\-:\-O\-C\-D\-B\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classormcore_1_1_o_c_d_b_manager}
+\end{center}
+\end{figure}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classormcore_1_1_o_c_d_b_manager_a30fc8cd88de7ff50e1d0c3fd3be99451}{set\-Data\-Base\-Name} (const \-Q\-String database\-Name)
+\item 
+static void \hyperlink{classormcore_1_1_o_c_d_b_manager_a5c5f905f5b91f9018d4fbd047e5aaa93}{connect} ()
+\item 
+static void \hyperlink{classormcore_1_1_o_c_d_b_manager_ac1425506ca2714cf62528bf48e4e372b}{close} ()
+\item 
+static void \hyperlink{classormcore_1_1_o_c_d_b_manager_a6482ce90b6c3f937f3e5aec74173cade}{drop} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classormcore_1_1_o_c_d_b_manager_ae8f27a1a41d27e0cfc4ba5bea99811e5}{
+static \-Q\-Sql\-Database {\bfseries \-\_\-db} = \-Q\-Sql\-Database()}
+\label{classormcore_1_1_o_c_d_b_manager_ae8f27a1a41d27e0cfc4ba5bea99811e5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classormcore_1_1_o_c_d_b_manager_ac1425506ca2714cf62528bf48e4e372b}{
+\index{ormcore\-::\-O\-C\-D\-B\-Manager@{ormcore\-::\-O\-C\-D\-B\-Manager}!close@{close}}
+\index{close@{close}!ormcore::OCDBManager@{ormcore\-::\-O\-C\-D\-B\-Manager}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void \-O\-C\-D\-B\-Manager\-::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_manager_ac1425506ca2714cf62528bf48e4e372b}
+\-Fecha a conexão com o banco de dados, caso exista uma aberta. \hypertarget{classormcore_1_1_o_c_d_b_manager_a5c5f905f5b91f9018d4fbd047e5aaa93}{
+\index{ormcore\-::\-O\-C\-D\-B\-Manager@{ormcore\-::\-O\-C\-D\-B\-Manager}!connect@{connect}}
+\index{connect@{connect}!ormcore::OCDBManager@{ormcore\-::\-O\-C\-D\-B\-Manager}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}void \-O\-C\-D\-B\-Manager\-::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_manager_a5c5f905f5b91f9018d4fbd047e5aaa93}
+\-Conecta no banco de dados \begin{DoxyReturn}{\-Returns}
+\-Valor booleano indicando se a conexão foi executada com sucesso ou não 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \hyperlink{classormcore_1_1_o_c_s_q_l_exception}{\-O\-C\-S\-Q\-L\-Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classormcore_1_1_o_c_d_b_manager_a6482ce90b6c3f937f3e5aec74173cade}{
+\index{ormcore\-::\-O\-C\-D\-B\-Manager@{ormcore\-::\-O\-C\-D\-B\-Manager}!drop@{drop}}
+\index{drop@{drop}!ormcore::OCDBManager@{ormcore\-::\-O\-C\-D\-B\-Manager}}
+\subsubsection[{drop}]{\setlength{\rightskip}{0pt plus 5cm}void \-O\-C\-D\-B\-Manager\-::drop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_manager_a6482ce90b6c3f937f3e5aec74173cade}
+\-Dropa toda a base de dados \hypertarget{classormcore_1_1_o_c_d_b_manager_a30fc8cd88de7ff50e1d0c3fd3be99451}{
+\index{ormcore\-::\-O\-C\-D\-B\-Manager@{ormcore\-::\-O\-C\-D\-B\-Manager}!set\-Data\-Base\-Name@{set\-Data\-Base\-Name}}
+\index{set\-Data\-Base\-Name@{set\-Data\-Base\-Name}!ormcore::OCDBManager@{ormcore\-::\-O\-C\-D\-B\-Manager}}
+\subsubsection[{set\-Data\-Base\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void \-O\-C\-D\-B\-Manager\-::set\-Data\-Base\-Name (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-String}]{database\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classormcore_1_1_o_c_d_b_manager_a30fc8cd88de7ff50e1d0c3fd3be99451}
+\-Atribui o nome do banco de dados 
+\begin{DoxyParams}{\-Parameters}
+{\em database\-Name} & \-Nome do banco de dados \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-O\-R\-M\-C++/include/ocdbmanager.\-h\item 
+\-O\-R\-M\-C++/src/ocdbmanager.\-cpp\end{DoxyCompactItemize}
