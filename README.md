@@ -1,12 +1,19 @@
+ORMC++
+======
 An object-relational mapping for C++/Qt and SQLite.
 
-How to use:
+Usage
+-----------
 First of all you've to tell what is the database name with a single line:
+```C++
 OCDBManager::setDataBaseName( "database_name.db" );
+```
 
 Then create a class that inherits from OCModel,(use OCParameter.h/OCParameter.cpp as example).
 
-header:
+header
+-------
+```C++
 #ifndef OCPARAMETER_H
 #define OCPARAMETER_H
 
@@ -32,8 +39,11 @@ namespace ormcore { //Main namespace
 }
 
 #endif // OCPARAMETER_H
+```
 
-source:
+source
+------
+```C++
 #include <ocparameter.h>
 
 using namespace ormcore;
@@ -57,40 +67,50 @@ OCParameter::OCParameter()
     :OCModel()
 {
 }
+```
 
-As you can see, you have to initialize _tableName and _fullSchema members, assign the _fullschema member with the names and types of the table.
+As you can see, you have to initialize <i>_tableName</i> and <i>_fullSchema</i> members, assign the <i>_fullschema</i> member with the names and types of the table.
 
-To synchronize the table with the database simply call: OCDBObject<OCParameter>::syncDatabase();
+To synchronize the table with the database simply call: <b>OCDBObject<OCParameter>::syncDatabase();</b>
 
-Important: The template argument for OCDBObject must be a OCModel subclass.
+<b>Important</b>: The template argument for OCDBObject must be a OCModel subclass.
 
 Now when you want to create a new object in  database use this:
+```C++
 OCDBObject<OCParameter> parameter;
+```
 
-Important: The argument for OCDBObject template must be a subclass model.
+<b>Important</b>: The argument for OCDBObject template must be a subclass model.
 
 Use the table column as a index-syntax way for the object, like:
 
+```C++
 parameter["settingsItem"] = 1;
 parameter["widgetType"] = "RADIO";
+```
 
 To save(insert or update) the item use the save method:
-parameter.save(); (When you create the object in the database, the Id() member is updated with the real value)
-
-Related: saveIfNotExists, saveIfNotExistsExcept
+```C++
+parameter.save(); //When you create the object in the database, the Id() member is updated with the real value
+```
+Related: <b>saveIfNotExists</b>, <b>saveIfNotExistsExcept</b>
 
 To retrieve a parameter by Id, use:
+```C++
 parameter.get( myId )
+```
 
 To list all the records in the database:
+```C++
 QList< OCDBObject<OCParameter> > parameters = OCDBObject<OCParameter>::objects();
+```
 You can pass a where clause and order by clause as argument
 
 You can check if there's the record in database using
 existsSameValues //Same values for fields according to a QStringList as argument
 
-existsSameValuesExcept //Same values except a QStringList of fields to ignore in the comparison
+<b>existsSameValuesExcept</b> //Same values except a QStringList of fields to ignore in the comparison
 
-Related: getSameValues, getSameValuesExcept
+Related: <b>getSameValues</b>, <b>getSameValuesExcept</b>
 
 
